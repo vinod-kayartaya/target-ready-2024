@@ -1,6 +1,10 @@
 # Compiled class file
 **/*.class
 
+# sonarlint
+
+**/.idea/sonarlint/
+
 # Log file
 **/*.log
 
