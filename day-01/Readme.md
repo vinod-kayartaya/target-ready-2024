@@ -1174,3 +1174,106 @@ public class HRManagementSystem {
 - The `main` method creates objects of `Employee` and `Contractor` classes and calls the `printPaymentDetails` method to print payment details for each object.
 
 This modification enhances the flexibility and extensibility of the code by centralizing the printing of payment details into a separate method. It also demonstrates the use of interfaces to achieve polymorphic behavior, as the `printPaymentDetails` method can accept any object that implements the `Payable` interface.
+
+## Enumerations and nested classes in Java
+
+Enumerations and nested classes are both important concepts in Java that allow for better organization, encapsulation, and readability of code.
+
+### Enumerations:
+
+Enumerations, also known as enums, are a special type in Java used to define a collection of constants. Enumerations provide a way to represent a fixed set of predefined values, making the code more readable and less error-prone.
+
+#### Declaration:
+
+```java
+enum Season {
+    WINTER, SPRING, SUMMER, FALL
+}
+```
+
+#### Usage:
+
+```java
+Season currentSeason = Season.WINTER;
+System.out.println("Current season is: " + currentSeason);
+```
+
+### Nested Classes:
+
+Nested classes are classes defined within another class. They can be static or non-static (also known as inner classes). Nested classes provide a way to logically group classes that are only used in one place, increase encapsulation, and improve code organization.
+
+#### Static Nested Class:
+
+```java
+class Outer {
+    static class Nested {
+        void display() {
+            System.out.println("Nested class method");
+        }
+    }
+}
+```
+
+#### Inner Class (Non-static Nested Class):
+
+```java
+class Outer {
+    class Inner {
+        void display() {
+            System.out.println("Inner class method");
+        }
+    }
+}
+```
+
+#### Usage:
+
+```java
+Outer.Nested nestedObject = new Outer.Nested();
+nestedObject.display();
+
+Outer outerObject = new Outer();
+Outer.Inner innerObject = outerObject.new Inner();
+innerObject.display();
+```
+
+### Example Usage:
+
+Let's say we want to represent different types of employees using enums and define an inner class to handle employee promotions within the `Employee` class.
+
+```java
+enum EmployeeType {
+    FULL_TIME, PART_TIME, CONTRACTOR
+}
+
+class Employee {
+    private String name;
+    private double salary;
+    private EmployeeType type;
+
+    public Employee(String name, double salary, EmployeeType type) {
+        this.name = name;
+        this.salary = salary;
+        this.type = type;
+    }
+
+    public void promote() {
+        if (type == EmployeeType.FULL_TIME) {
+            // Perform promotion for full-time employees
+            System.out.println(name + " has been promoted!");
+        } else {
+            System.out.println("Promotion not applicable for " + type + " employees.");
+        }
+    }
+}
+```
+
+### Explanation:
+
+- Enumerations provide a way to represent fixed sets of constants, such as seasons, days of the week, etc.
+- Nested classes allow classes to be defined within another class, improving code organization and encapsulation.
+- Static nested classes are associated with the enclosing class and can be instantiated independently.
+- Inner classes are non-static nested classes and have access to the instance variables and methods of the enclosing class.
+- In the HR management system example, `EmployeeType` enum represents different types of employees, and the `Employee` class contains an inner method `promote()` to handle promotions based on employee type.
+
+Both enumerations and nested classes are powerful features in Java that contribute to better code organization, encapsulation, and maintainability. They are widely used in Java programming to improve readability and reduce complexity.
