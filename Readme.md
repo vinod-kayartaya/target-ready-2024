@@ -1,5 +1,25 @@
 # TargetReady 2024
 
+## Git repositories of participants (for assignments)
+
+- [Jaya Singh](https://github.com/p-jaya/Target-Ready)
+- [Kanishk Vanga](https://github.com/Kanishk1002/Target_Ready_2024)
+- [Nirbhai Sai](https://github.com/NIRBHAI-SAI/assignments/tree/master)
+- [Kishor Kumar Behera](https://github.com/kishor1010/target-ready-2024)
+- [chandini rongali](https://github.com/Chandini3/target-2024)
+- [Ankit Kumar](https://github.com/Ankitkumar803/Target-Ready-2024)
+- [Sai Tejaswi K](https://github.com/Saitejaswi-K/Target-Ready-2024)
+- [Sahel Riaz](https://github.com/sahel-riaz/target-ready-2024)
+- [Bharath Sajan](https://github.com/BharathSajan/target-ready)
+- [Mohammad Affan Savanur](https://github.com/ROckx14/TargetReady_2024)
+- [Amogh pandey](https://github.com/amoghpandey2001)
+- [Susmitha Utla](https://github.com/SusmithaUtla/Target-ready-2024)
+- [Swayamshu Swain](https://github.com/Swayamshu/target-ready-2024)
+- [Ujjwal Bansal](https://github.com/ujjwalban/Target_Ready)
+- [Harshit Soni](https://github.com/harshit-333/target-ready-2024)
+- [Nimitha Reddy Magatala](https://github.com/nimithareddy03/target-ready-2024)
+- [Pavan Kumar G](https://github.com/pavankumar0715/target-ready-2024.git)
+
 ## Software Setup:
 
 - JDK 17 or later
