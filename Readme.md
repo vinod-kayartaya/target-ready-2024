@@ -18,7 +18,10 @@
 - [Ujjwal Bansal](https://github.com/ujjwalban/Target_Ready)
 - [Harshit Soni](https://github.com/harshit-333/target-ready-2024)
 - [Nimitha Reddy Magatala](https://github.com/nimithareddy03/target-ready-2024)
-- [Pavan Kumar G](https://github.com/pavankumar0715/target-ready-2024.git)
+- [Pavan Kumar G](https://github.com/pavankumar0715/target-ready-2024)
+- [Koustubh Mane](https://github.com/Koustubh-Mane1/Target_Ready)
+- [Lara](https://github.com/Lara369/target-ready)
+- [Ayushi Gupta](https://github.com/Ayushi-gupta1225/Targetready-2024)
 
 ## Software Setup:
 
