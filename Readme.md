@@ -22,6 +22,8 @@
 - [Koustubh Mane](https://github.com/Koustubh-Mane1/Target_Ready)
 - [Lara](https://github.com/Lara369/target-ready)
 - [Ayushi Gupta](https://github.com/Ayushi-gupta1225/Targetready-2024)
+- [ANAGH DEEPAK](https://github.com/anaghdeebug/Target_Ready)
+- [Shubham Praveen Poorkar](https://github.com/spp4322/target-ready-2024)
 
 ## Software Setup:
 
