@@ -1,6 +1,7 @@
 package com.targetindia.miniproject.dao;
 
 import com.targetindia.miniproject.model.Customer;
+import com.targetindia.miniproject.utils.IdGenerator;
 
 import java.util.ArrayList;
 import java.util.List;

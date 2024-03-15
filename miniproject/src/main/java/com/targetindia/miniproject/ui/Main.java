@@ -1,5 +1,6 @@
 package com.targetindia.miniproject.ui;
 
+import com.targetindia.miniproject.model.Customer;
 import com.targetindia.miniproject.service.CustomerManager;
 import com.targetindia.miniproject.service.ServiceException;
 import com.targetindia.miniproject.utils.KeyboardUtil;
@@ -11,7 +12,17 @@ import java.util.InputMismatchException;
 public class Main {
 
     // this has a dependency on the CustomerManager
-    CustomerManager cm = new CustomerManager();
+    CustomerManager cm;
+
+    public Main()  {
+        try {
+            cm = new CustomerManager();
+        } catch (ServiceException e) {
+            log.warn("error while creating CustomerManager", e);
+            System.out.println("Sorry. There wan an error. Please check logs.");
+            System.exit(1);
+        }
+    }
 
 
     int menu(){
@@ -59,7 +70,26 @@ public class Main {
     }
 
     void addNewCustomerData() {
-        System.out.println("adding new customer..");
+        try{
+            System.out.println("Enter new customer details: ");
+            // accept data from the user: name, city, email, phone
+            String name = KeyboardUtil.getString("Name  : ");
+            String city = KeyboardUtil.getString("City  : ");
+            String email = KeyboardUtil.getString("Email : ");
+            String phone = KeyboardUtil.getString("Phone : ");
+
+            // create customer object
+            Customer customer = new Customer(0, name, city, email, phone);
+
+            // call the service method to add new customer
+            customer = cm.addNewCustomer(customer);
+            System.out.println("New customer added successfully with id: " + customer.getId());
+        }
+        catch(ServiceException e){
+            // show errors to user in a user friendly manner
+            log.warn("error while adding new user in the UI", e);
+            System.out.println("Something went wrong. Please check logs.");
+        }
     }
 
     void displayCustomerList() {
