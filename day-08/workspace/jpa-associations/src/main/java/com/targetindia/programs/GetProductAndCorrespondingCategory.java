@@ -20,7 +20,8 @@ public class GetProductAndCorrespondingCategory {
             return;
         }
 
-        Printer.print(p, "category");
-        Printer.print(p.getCategory(), null);
+        Printer.print(p, "category", "supplier");
+        Printer.print(p.getCategory(), "products");
+        Printer.print(p.getSupplier(), "products");
     }
 }

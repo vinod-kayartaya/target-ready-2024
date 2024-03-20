@@ -14,8 +14,13 @@ public class Product {
     private Integer productId;
     @Column(name="product_name")
     private String productName;
+
     @Column(name="supplier_id")
     private Integer supplierId;
+
+    @ManyToOne
+    @JoinColumn(name="supplier_id", insertable = false, updatable = false)
+    private Supplier supplier;
 
     @Column(name="category_id")
     private Integer categoryId;
