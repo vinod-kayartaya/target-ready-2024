@@ -1,3 +1,5 @@
+![](http://ksoong.org/assets/blog/NorthWindSchema.png)
+
 # Introduction to JPA (Java Persistence API)
 
 ## Understanding ORM (Object-Relational Mapping)
