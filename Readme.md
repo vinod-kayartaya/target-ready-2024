@@ -134,10 +134,10 @@ To fully benefit from this course, students should have:
 - Lazy loading vs. eager loading
 - Fetch strategies and performance optimization
 - Transaction management in JPA
-- Using JPQL (Java Persistence Query Language)
 
 ### Session 9: JPA Querying and Optimization
 
+- Using JPQL (Java Persistence Query Language)
 - Advanced querying with JPQL and Criteria API
 - Named queries and dynamic queries
 - Caching and query optimization techniques
