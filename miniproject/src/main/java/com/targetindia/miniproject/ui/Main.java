@@ -79,7 +79,7 @@ public class Main {
             String phone = KeyboardUtil.getString("Phone : ");
 
             // create customer object
-            Customer customer = new Customer(0, name, city, email, phone);
+            Customer customer = new Customer(null, name, city, email, phone);
 
             // call the service method to add new customer
             customer = cm.addNewCustomer(customer);
