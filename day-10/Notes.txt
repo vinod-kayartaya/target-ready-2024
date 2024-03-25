@@ -1,0 +1,54 @@
+* syntax
+    - type inference
+    - data classes
+    - extension functions
+
+* statically typed
+    - variables must have a datatype in advnce
+
+* interoperability with Java
+    - your code compiles to a java bytecode
+    - your code can use any buitl in or 3rd party java libraries
+
+* Null safety
+
+* Functional programming
+    - lambda expressions
+    - function types
+    - higher-order-functions
+    - immutatble data structures
+
+* Coroutines
+
+* Extension functions
+
+* Smart casts
+    ```java
+        if(obj instanceof Product) {
+            Product p = (Product) obj;
+            p.printProductInfo();
+        }
+    ```
+
+    ```kotlin
+        (obj is Product){
+            obj.printProductInfo()
+        }
+    ```
+
+
+* Datatypes:
+    - primitves: Byte, Short, Int, Long, Float, Double, Character, Boolean
+    - references: variables of any type other than primitive classes
+
+* Operators:
+    - Arithmetic:
+        - (Binary) + - * / %
+        - (Unary) ++ -- + -
+    - Assignment:
+        - simple assignment (=) 
+        - compound assignment (+= -= *= /= %=)
+    - Relational: < <= > >= == !=
+    - Logical: && || !
+
+
