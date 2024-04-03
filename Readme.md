@@ -182,7 +182,34 @@ To fully benefit from this course, students should have:
 - Extension functions and properties
 - Kotlin Standard Library overview
 
-### Session 14: Introduction to Asynchronous Programming
+### Session 14: Unit testing in Kotlin
+
+- Understanding the purpose and importance of unit testing
+- Basic concepts: test cases, assertions, test suites
+- Configuring testing dependencies in Kotlin projects
+- Choosing testing frameworks (JUnit, Spek, etc.)
+- Writing test functions in Kotlin
+- Grouping tests using test suites and test classes
+- Using built-in assertions and matchers
+- Custom assertions and matchers
+
+### Session 15: Test-Driven Development (TDD)
+
+- Understanding test doubles
+- Using libraries like Mockito for creating mocks
+- Principles and benefits of TDD
+- Writing tests before implementation
+- Testing Kotlin-specific constructs (coroutines, data classes, etc.)
+- Handling nullable types in tests
+- Writing integration tests for Kotlin applications
+- Setup and teardown for integration tests
+- Measuring code coverage
+- Generating test reports
+- Writing clean, maintainable tests
+- Test organization and naming conventions
+- Continuous Integration (CI) and testing automation
+
+### Session 16: Introduction to Asynchronous Programming
 
 - Understanding synchronous vs. asynchronous code
 - Need for asynchronous programming
@@ -195,7 +222,7 @@ To fully benefit from this course, students should have:
 - Handling coroutine cancellation
 - Timeout and its implementation in coroutines
 
-### Session 15: Coroutine Context, Scope, Concurrency and Exceptions
+### Session 17: Coroutine Context, Scope, Concurrency and Exceptions
 
 - Exploring CoroutineContext and CoroutineScope
 - Customizing coroutine context for specific tasks
@@ -204,7 +231,7 @@ To fully benefit from this course, students should have:
 - Dealing with exceptions in coroutines
 - Exception handling strategies
 
-### Session 16: Coroutine Flows, Channels and Patterns
+### Session 18: Coroutine Flows, Channels and Patterns
 
 - Introduction to cold streams using Flow
 - Asynchronous data streams and their operators
@@ -212,33 +239,6 @@ To fully benefit from this course, students should have:
 - Implementing producer-consumer scenarios using channels
 - SupervisorScope and structured concurrency
 - Coroutine fan-out and fan-in patterns
-
-### Session 17: Unit testing in Kotlin
-
-- Understanding the purpose and importance of unit testing
-- Basic concepts: test cases, assertions, test suites
-- Configuring testing dependencies in Kotlin projects
-- Choosing testing frameworks (JUnit, Spek, etc.)
-- Writing test functions in Kotlin
-- Grouping tests using test suites and test classes
-- Using built-in assertions and matchers
-- Custom assertions and matchers
-- Understanding test doubles
-- Using libraries like Mockito for creating mocks
-
-### Session 18: Test-Driven Development (TDD)
-
-- Principles and benefits of TDD
-- Writing tests before implementation
-- Testing Kotlin-specific constructs (coroutines, data classes, etc.)
-- Handling nullable types in tests
-- Writing integration tests for Kotlin applications
-- Setup and teardown for integration tests
-- Measuring code coverage
-- Generating test reports
-- Writing clean, maintainable tests
-- Test organization and naming conventions
-- Continuous Integration (CI) and testing automation
 
 ### Session 19: Introduction to Data Structures and Algorithms
 
