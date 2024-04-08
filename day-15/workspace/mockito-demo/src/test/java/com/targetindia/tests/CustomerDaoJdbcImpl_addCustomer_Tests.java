@@ -28,7 +28,7 @@ public class CustomerDaoJdbcImpl_addCustomer_Tests {
     PreparedStatement stmt;
 
     @InjectMocks
-    CustomerDaoJdbcImpl dao;
+    CustomerDaoJdbcImpl dao = new CustomerDaoJdbcImpl();
 
 
     @Test
