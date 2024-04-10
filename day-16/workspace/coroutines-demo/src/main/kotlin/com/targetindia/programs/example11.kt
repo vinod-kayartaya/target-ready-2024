@@ -7,7 +7,7 @@ fun main() {
     val result = GlobalScope.async {
         // launches in a new thread
         println("start of a new async task (coroutine) --> ${threadName()}")
-        delay(4000)
+        delay(8000)
         "Hello, world!"
     }
 
@@ -20,7 +20,7 @@ fun main() {
         val anotherResult = async {
             // uses the parent thread
             println("another coroutine is launched using async --> ${threadName()}")
-            delay(2000);
+            delay(4000);
             "coroutines are awesome!"
         }
         println("result is ${anotherResult.await()} --> ${threadName()}")
