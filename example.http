@@ -1,0 +1,23 @@
+GET /
+Host: localhost:9876
+Accept: application/json
+
+###
+
+GET /hello
+Host: localhost:9876
+Accept: text/plain
+
+###
+
+GET /hello
+Host: localhost:9876
+Accept: application/json
+
+###
+
+GET /hello
+Host: localhost:9876
+Accept: application/xml
+
+###

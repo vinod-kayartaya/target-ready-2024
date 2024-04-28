@@ -1,0 +1,3 @@
+
+rootProject.name = "searching-demo"
+
