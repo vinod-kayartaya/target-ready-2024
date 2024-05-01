@@ -1,0 +1,45 @@
+.app-footer {
+    bottom: 0;
+    position: fixed;
+    width: 100vw;
+    margin-bottom: 0;
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.app-footer a {
+    color: #fff;
+}
+
+.app-count {
+    width: 100px;
+    display: inline-block;
+}
+
+.app-main {
+    margin-bottom: 100px;
+}
+
+.app-movie-poster {
+    width: 200px;
+    height: 200px;
+}
+
+.app-person-name button{
+    visibility: hidden;
+}
+
+.app-person-name:hover button{
+    visibility: visible;
+}
+
+.app-person-name:hover  {
+    background-color: #ddd;
+}
+
+.app-box {
+    height: 200px;
+    border: 1px solid black;
+    background-color: aqua;
+}
