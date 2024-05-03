@@ -304,20 +304,20 @@ To fully benefit from this course, students should have:
 - Exploring component lifecycle methods (e.g., componentDidMount, componentDidUpdate)
 - Handling events in React.js components
 - Introduction to state management in React.js using useState and useEffect hooks
-- Managing state across components using props and lifting state up
 
 ### Session 27: React.js Routing and Hooks
 
+- Managing state across components using props and lifting state up
+- Working with forms in React.js (controlled vs. uncontrolled components)
 - Introduction to React Router for handling client-side routing
 - Configuring routes in a React.js application
 - Implementing navigation in React.js using Link and NavLink components
-- Introduction to React.js hooks (useState, useEffect, useContext)
-- Implementing custom hooks for reusable logic
 
 ### Session 28: Advanced Topics in React.js
 
+- Implementing custom hooks for reusable logic
+- Introduction to React.js hooks (useState, useEffect, useContext)
 - Introduction to advanced React.js concepts (e.g., context API, higher-order components)
-- Working with forms in React.js (controlled vs. uncontrolled components)
 - Introduction to styling in React.js (inline styles, CSS modules, styled-components)
 - Best practices and tips for building scalable React.js applications
 - Q&A and Recap of the course content
