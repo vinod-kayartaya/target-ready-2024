@@ -1,6 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { useExpensesContext } from '../custom-hooks';
 
-const ExpenseForm = ({ addExpense, expenseToEdit, setExpenseToEdit }) => {
+const ExpenseForm = () => {
+  const { addExpense, expenseToEdit, setExpenseToEdit, updateExpense } =
+    useExpensesContext();
+  const descriptionRef = useRef();
+
   const [data, setData] = useState({
     description: '',
     amount: 0,
@@ -33,8 +38,9 @@ const ExpenseForm = ({ addExpense, expenseToEdit, setExpenseToEdit }) => {
 
     if (expenseToEdit === null) {
       addExpense(data);
+      descriptionRef.current.focus();
     } else {
-      // TODO: call a function received as prop to update the changes
+      updateExpense(data);
     }
 
     setData({
@@ -64,6 +70,7 @@ const ExpenseForm = ({ addExpense, expenseToEdit, setExpenseToEdit }) => {
             value={data.description}
             onChange={changeHandler}
             name='description'
+            ref={descriptionRef}
           />
         </div>
         <div className='mb-3'>

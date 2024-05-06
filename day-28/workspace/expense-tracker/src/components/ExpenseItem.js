@@ -1,6 +1,9 @@
 import React from 'react';
+import { useExpensesContext } from '../custom-hooks';
 
-const ExpenseItem = ({ expense, deleteExpense, editExpense }) => {
+const ExpenseItem = ({ expense }) => {
+  const { deleteExpense, editExpense } = useExpensesContext();
+
   const deleteButtonHandler = () => {
     deleteExpense(expense.id);
   };

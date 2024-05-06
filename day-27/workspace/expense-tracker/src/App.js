@@ -28,6 +28,7 @@ const initialState = [
 const App = () => {
   // state
   const [expenses, setExpenses] = useState(initialState);
+  const [expenseToEdit, setExpenseToEdit] = useState(null);
 
   // beahavior
   const deleteExpense = (id) => {
@@ -43,17 +44,35 @@ const App = () => {
     setExpenses([expense, ...expenses]);
   };
 
+  const editExpense = (id) => {
+    console.log('got this id', id, 'for edit');
+    const tmp = expenses.find((e) => e.id === id);
+    setExpenseToEdit({ ...tmp });
+  };
+
+  const updateExpense = (expense) => {
+    // TODO: update the corresponding expense in the state `expenses`
+  };
+
   return (
     <>
       <Header />
       <div style={{ minHeight: '650px' }} className='container'>
         <div className='row'>
           <div className='col-md-6 col-xs-12'>
-            <ExpenseForm addExpense={addExpense} />
+            <ExpenseForm
+              addExpense={addExpense}
+              expenseToEdit={expenseToEdit}
+              setExpenseToEdit={setExpenseToEdit}
+            />
           </div>
 
           <div className='col-md-6 col-xs-12'>
-            <ExpenseList expenses={expenses} deleteExpense={deleteExpense} />
+            <ExpenseList
+              expenses={expenses}
+              deleteExpense={deleteExpense}
+              editExpense={editExpense}
+            />
           </div>
         </div>
       </div>

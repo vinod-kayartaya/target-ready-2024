@@ -1,14 +1,12 @@
 import React from 'react';
 import ExpenseItem from './ExpenseItem';
+import { useExpensesContext } from '../custom-hooks';
 
-const ExpenseList = ({ expenses, deleteExpense, editExpense }) => {
+const ExpenseList = () => {
+  const { expenses } = useExpensesContext();
+
   const expensesJsx = expenses.map((e) => (
-    <ExpenseItem
-      expense={e}
-      key={e.id}
-      deleteExpense={deleteExpense}
-      editExpense={editExpense}
-    />
+    <ExpenseItem expense={e} key={e.id} />
   ));
 
   return (
