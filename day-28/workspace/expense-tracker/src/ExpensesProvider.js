@@ -37,6 +37,7 @@ const ExpensesProvider = ({ children }) => {
     if (indexToUpdate !== -1) {
       expensesLocal[indexToUpdate] = expense;
       setExpenses(expensesLocal);
+      setExpenseToEdit(null);
     }
   };
 

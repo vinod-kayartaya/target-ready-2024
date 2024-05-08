@@ -1,6 +1,20 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useExpensesContext } from '../custom-hooks';
 
+const currentDate = () => {
+  // Get current date
+  var currentDate = new Date();
+
+  // Define options for formatting
+  var options = { day: '2-digit', month: '2-digit', year: 'numeric' };
+
+  // Create formatter
+  var dateFormatter = new Intl.DateTimeFormat('en-IN', options);
+
+  // Format the date
+  return dateFormatter.format(currentDate);
+};
+
 const ExpenseForm = () => {
   const { addExpense, expenseToEdit, setExpenseToEdit, updateExpense } =
     useExpensesContext();
@@ -9,7 +23,7 @@ const ExpenseForm = () => {
   const [data, setData] = useState({
     description: '',
     amount: 0,
-    date: '3/5/2024',
+    date: currentDate(),
   });
 
   useEffect(() => {
@@ -26,7 +40,7 @@ const ExpenseForm = () => {
     setData({
       description: '',
       amount: 0,
-      date: '3/5/2024',
+      date: currentDate(),
     });
     setExpenseToEdit(null);
   };
@@ -46,7 +60,7 @@ const ExpenseForm = () => {
     setData({
       description: '',
       amount: 0,
-      date: '3/5/2024',
+      date: currentDate(),
     });
   };
 
@@ -88,8 +102,7 @@ const ExpenseForm = () => {
         </div>
         <div className='mb-3'>
           <label htmlFor='dateInput' className='form-label'>
-            Date
-          </label>
+            Date (DD/MM/YYYY) </label>
           <input
             type='text'
             className='form-control'
