@@ -1,0 +1,8 @@
+POST /api/location
+Host: localhost:5678
+Content-Type: application/json
+
+{
+    "lat": 0.3039238,
+    "lon": 8.2837373
+}
